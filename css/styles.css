@@ -1,0 +1,68 @@
+.header {
+    background-image: url("https://www.hostmaster.ua/img/top1.png");
+    background-repeat: no-repeat;
+    background-color: #c6dcdc;
+    height: 84px;
+}
+
+.header div {
+    margin-right: 1%;
+}
+
+.nav-color {
+    background-color: #233353;
+}
+
+.item-color {
+    color: #f1f1ff;
+}
+
+.news {
+    width: 312px;
+    margin: 16px 0;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #dceeee;
+}
+
+.news__header {
+    border-bottom: 1px solid black;
+}
+
+.news__header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news__header > p {
+    font-weight: bold;
+}
+
+.news > section > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news > a {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 168px;
+    }
+
+    .header div {
+        margin-top: 84px;
+    }
+}
+
+@media (max-width: 768px) {
+    main > .news {
+        margin: 0 16px 16px;
+    }
+}
