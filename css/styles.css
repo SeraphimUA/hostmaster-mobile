@@ -17,9 +17,14 @@
     color: #f1f1ff;
 }
 
+main {
+    width: 1344px;
+    margin: 0 auto;
+}
+
 .news {
     width: 312px;
-    margin: 16px 0;
+    margin: 16px 12px;
     padding: 5px;
     border: 1px solid black;
     background-color: #dceeee;
@@ -63,6 +68,18 @@
 
 @media (max-width: 768px) {
     main > .news {
-        margin: 0 16px 16px;
+        margin: 0 16px 12px;
+    }
+}
+
+@media (max-width: 1366px) {
+    main {
+        width: 1008px;
+    }
+}
+
+@media (max-width: 1030px) {
+    main {
+        width: 672px;
     }
 }

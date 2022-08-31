@@ -86,7 +86,7 @@
         </div>
       </div>
     </nav>
-    <main class="d-flex justify-content-around flex-wrap">
+    <main id="news-sector" class="d-flex justify-content-start flex-wrap">
       <article class="news d-flex flex-column">
         <header class="news__header">
           <img
@@ -190,5 +190,22 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script>
+      if (window.innerWidth <= 768) {
+        document
+          .getElementById("news-sector")
+          .classList.add("justify-content-around");
+        document
+          .getElementById("news-sector")
+          .classList.remove("justify-content-start");
+      } else {
+        document
+          .getElementById("news-sector")
+          .classList.add("justify-content-start");
+        document
+          .getElementById("news-sector")
+          .classList.remove("justify-content-around");
+      }
+    </script>
   </body>
 </html>
