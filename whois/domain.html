@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+    <script src="whois_script.js"></script>
     <header class="header">
       <div class="float-end text-end">
         <b>.UA - наш дiм. Зробимо його кращим!</b>
@@ -141,15 +142,17 @@
                 type="text"
                 class="form-control d-inline"
                 id="whois_domain"
+                name="_domain_"
               />
             </div>
             <div class="col">
-              <button type="submit" class="btn btn-primary d-inline">
+              <button type="button" class="btn btn-primary d-inline" onclick="whois_domain_func()">
                 Перевірити
               </button>
             </div>
           </div>
         </form>
+        <div id="new_whois_result"></div>
       </main>
     </div>
     <script
@@ -157,6 +160,5 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>
