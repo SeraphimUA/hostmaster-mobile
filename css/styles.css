@@ -75,6 +75,15 @@ container {
   grid-area: main;
 }
 
+.required:after {
+  content: " *";
+  color: red;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 992px) {
   .bd-layout {
     display: grid;
