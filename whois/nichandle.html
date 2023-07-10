@@ -120,14 +120,14 @@
                     <li>
                       <a
                         href="/whois/domain.html"
-                        class="bd-links-link d-inline-block rounded active"
+                        class="bd-links-link d-inline-block rounded"
                         >Домен</a
                       >
                     </li>
                     <li>
                       <a
                         href="/whois/nichandle.html"
-                        class="bd-links-link d-inline-block rounded"
+                        class="bd-links-link d-inline-block rounded active"
                         >Nic-handle</a
                       >
                     </li>
@@ -140,20 +140,24 @@
       </aside>
       <main class="bd-main order-1">
         <form>
-          <label for="whois_domain" class="form-label d-inline"
-            >Вкажіть ім'я потрібного домену</label
+          <label for="whois_nichandle" class="form-label d-inline"
+            >Вкажіть ім'я потрібного nic-handle</label
           >
           <div class="row">
             <div class="col">
               <input
                 type="text"
                 class="form-control d-inline"
-                id="whois_domain"
-                name="_domain_"
+                id="whois_nichandle"
+                name="_nichandle_"
               />
             </div>
             <div class="col">
-              <button type="button" class="btn btn-primary d-inline" onclick="whois_domain_func()">
+              <button
+                type="button"
+                class="btn btn-primary d-inline"
+                onclick="whois_nichandle_func()"
+              >
                 Перевірити
               </button>
             </div>
