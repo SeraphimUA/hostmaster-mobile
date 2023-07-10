@@ -37,8 +37,8 @@ function uanicSubmit() {
   formNameValue = formName.value;
   if (formDataLangValue == "uk") {
     if (
-      formSurnameValue.match("^[А-ЯҐЄІЇ][а-яґєії\-\']*[А-ЯҐЄІЇ]?[а-яґєії]+$") &&
-      formNameValue.match("^[А-ЯҐЄІЇ][а-яґєії\-\']*[А-ЯҐЄІЇ]?[а-яґєії]+$")
+      formSurnameValue.match("^[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+$") &&
+      formNameValue.match("^[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+$")
     )
       alert("Дані валідні");
     else alert("Введіть дані тією мовою, яку Ви обрали!");
