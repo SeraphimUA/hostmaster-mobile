@@ -37,8 +37,42 @@ function uanicSubmit() {
   formNameValue = formName.value;
   if (formDataLangValue == "uk") {
     if (
-      formSurnameValue.match("^[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+$") &&
-      formNameValue.match("^[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+$")
+      formSurnameValue.match(
+        "^[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+$"
+      ) &&
+      formNameValue.match(
+        "^[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+$"
+      )
+    )
+      alert("Дані валідні");
+    else alert("Введіть дані тією мовою, яку Ви обрали!");
+  } else {
+    if (
+      formSurnameValue.match("^[A-Z][a-z]*$") &&
+      formNameValue.match("^[A-Z][a-z]*$")
+    )
+      alert("The data are valid");
+    else alert("Please enter the data in the language you have chosen!");
+  }
+}
+
+function uanicSubmitJur() {
+  let formElem = document.querySelector("#uanic_form");
+  formElem = addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
+  let formDataLang = document.getElementById("datalang");
+  let formDataLangValue = formDataLang.value;
+  let formOname = document.getElementById("oname");
+  let formOnameValue = formOname.value;
+  let formOrgId = document.getElementById("org_id");
+  let formOrgIdValue = formOrgId.value;
+  if (formDataLangValue == "uk") {
+    if (
+      formOnameValue.match(
+        "^[А-ЯҐЄІЇ]+ \"[А-ЯҐЄІЇ][а-яґєії'-]*[А-ЯҐЄІЇ]?[а-яґєії'-]*[а-яґєії]+\"$"
+      ) &&
+      (formOrgIdValue === "" || formOrgIdValue.match("^[0-9]{8}$"))
     )
       alert("Дані валідні");
     else alert("Введіть дані тією мовою, яку Ви обрали!");
